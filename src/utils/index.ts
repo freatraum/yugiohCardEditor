@@ -1,3 +1,4 @@
+
 export const loadCSS = (url: string) => {
   const css = document.createElement('link');
   css.rel = 'stylesheet';
@@ -18,6 +19,7 @@ export function numberToFull(value:number) {
 
 export interface StyleObject {
   [key: string]: string | number | StyleObject; // 定义样式对象的属性类型
+
 }
 
 export const inheritProp = (obj: StyleObject, parentObj: StyleObject = {}): StyleObject => {
